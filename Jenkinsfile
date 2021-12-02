@@ -21,7 +21,7 @@ pipeline {
          }
         stage('Publish'){
              steps{
-               sh 'dotnet publish net6-test/net6-test.csproj --configuration Release --no-restore'
+               sh 'dotnet publish net6-test/net6-test.csproj --configuration Release --no-restore --output ~/home/jason/builds/'
              }
         }
     }
